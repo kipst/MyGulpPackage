@@ -1,0 +1,26 @@
+$media-mobile-width: 650px
+
+@mixin media-mobile
+  @media screen and (max-width: #{$media-mobile-width})
+    @content
+
+
+$media-tablet-width: 1024px
+
+@mixin media-tablet
+  @media screen and (max-width: #{$media-tablet-width})
+    @content
+
+@mixin defaultMixin
+  display: flex
+  align-items: center
+
+@mixin mainWidth
+  width: 1200px
+  max-width: 100%
+  margin: 0 auto
+
+@mixin montserrat
+  font-family: Montserrat, sans-serif
+  font-style: normal
+
